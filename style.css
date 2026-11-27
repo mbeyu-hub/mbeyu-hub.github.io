@@ -1,0 +1,869 @@
+/* General page styling */
+body {
+    background: linear-gradient(135deg, #171717, #241c24, #171717);
+    color: #e8e1e5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #242024;
+    padding: 20px;
+    text-align: center;
+	border-bottom: 1px solid #b87591;
+	position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #e6a6bd;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+	padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #49313d;
+    border-radius: 5px;
+}
+
+/* Main headings */
+h1 {
+    color: #e6a6bd;
+    text-align: center;
+    margin-top: 35px;
+}
+
+h2 {
+    color: #d98ba8;
+}
+
+h3 {
+    color: #e6a6bd;
+}
+
+/* Paragraphs and lists */
+p, li {
+    font-size: 16px;
+}
+
+ul {
+    line-height: 2;
+}
+
+/* Links */
+a {
+    color: #e6a6bd;
+}
+
+/* Contact form */
+input, textarea {
+    background-color: #292529;
+    color: #ffffff;
+    border: 1px solid #b87591;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d98ba8;
+    color: #171717;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #242024;
+    color: #c9bdc3;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+/* Movie cards */
+.movie-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #3b202b, #291820, #3b202b);
+    border: 1px solid #c49a72;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 850px;
+    text-align: left;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0;
+    flex-shrink: 0;
+	border: 1px solid #c49a72;
+    box-shadow: 0 4px 12px rgba(196, 154, 114, 0.15);
+}
+
+.movie-card h2 {
+    margin-top: 10px;
+}
+
+.movie-card p {
+    margin-bottom: 5px;
+}
+/* Movie page layout */
+.movie-card {
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(230, 166, 189, 0.08);
+}
+img {
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 1px solid #5c3b4a;
+}
+/* Profile photo */
+body > img {
+    display: block;
+    margin: 20px auto;
+}
+.profile-photo {
+    width: 220px;
+    height: auto;
+    border: 2px solid #e6a6bd;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Crochet project gallery */
+.hobby-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px auto;
+}
+
+.gallery-item {
+    background-color: #242024;
+    border: 1px solid #5c3b4a;
+    border-radius: 10px;
+    padding: 12px;
+    width: 220px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.gallery-item p {
+    margin: 12px 0 5px;
+    font-size: 14px;
+}
+
+/* Poetry gallery */
+.poetry-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px auto;
+}
+
+.poetry-card {
+    background-color: #242024;
+    border: 1px solid #5c3b4a;
+    border-radius: 10px;
+    padding: 18px;
+    width: 240px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(230, 166, 189, 0.08);
+}
+
+.poetry-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.poetry-card h3 {
+    margin-top: 5px;
+}
+
+.poetry-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Journal section */
+.journal-card {
+    background-color: #242024;
+    border: 1px solid #5c3b4a;
+    border-radius: 10px;
+    padding: 18px;
+    max-width: 400px;
+    margin: 25px auto;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(230, 166, 189, 0.08);
+}
+
+.journal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0;
+}
+
+/* Reading card */
+.reading-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #242024;
+    border: 1px solid #5c3b4a;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 650px;
+    margin: 25px auto;
+    box-shadow: 0 4px 12px rgba(230, 166, 189, 0.08);
+}
+
+.reading-card img {
+    width: 210px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.reading-card p {
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Sims 4 gallery */
+.sims-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px auto;
+}
+
+.sim-card {
+    background-color: #242024;
+    border: 1px solid #5c3b4a;
+    border-radius: 10px;
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(230, 166, 189, 0.08);
+}
+
+.sim-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.sim-card p {
+    font-size: 14px;
+    margin: 12px 0 5px;
+}
+
+/* Home page banner */
+.home-banner {
+    background-image: url("images/home-postcard.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #d99bb5;
+    border-radius: 14px;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.home-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 250, 245, 0.48);
+    backdrop-filter: blur(3px);
+    z-index: 0;
+}
+
+.banner-label {
+    color: #49313d;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.home-banner h1 {
+    color: #211820;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.banner-subtitle {
+    color: #49313d;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.banner-decoration {
+    color: #a65f80;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+/* Home hero layout */
+.hero-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+	position: relative;
+    z-index: 1;
+}
+
+.hero-photo {
+    flex: 0 0 38%;
+    text-align: center;
+    align-self: stretch;
+}
+}
+
+.hero-photo img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    min-height: 490px;
+    object-fit: cover;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+}
+
+.hero-content {
+    flex: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.hero-content h1 {
+    text-align: left;
+    color: #000000;
+}
+
+.hero-content p {
+    line-height: 1.7;
+    color: #000000;
+}
+
+/* Quick Facts panel */
+.quick-facts {
+    background: linear-gradient(145deg, #292229, #211b21);
+    border: 1px solid #8f5c72;
+    border-radius: 14px;
+    padding: 25px 30px;
+    margin: 35px auto;
+    max-width: 850px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+}
+/* Quick Facts grid */
+.quick-facts ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.quick-facts li {
+    background-color: #302630;
+    border: 1px solid #8f5c72;
+    border-radius: 10px;
+    padding: 15px;
+}
+.quick-facts li:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+}
+.quick-facts li strong {
+    color: #e6a6bd;
+}
+.quick-facts h2 {
+    text-align: center;
+    color: #e6a6bd;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.facts-decoration {
+    text-align: center;
+    color: #d99bb5;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: -10px 0 25px;
+}
+
+.facts-link {
+    display: inline-block;
+    background-color: #d99bb5;
+    color: #211b21;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.facts-link:hover {
+    background-color: #f0c3d3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(217, 155, 181, 0.25);
+}
+
+/* Academic page banner */
+.academic-banner {
+    background-image: url("images/academic-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #a49b72;
+    border-radius: 14px;
+    padding: 65px 40px;
+    margin: 40px auto 55px;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	position: relative;
+    isolation: isolate;
+}
+
+.academic-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 30, 20, 0.45);
+    border-radius: 14px;
+    z-index: -1;
+}
+
+.academic-banner h1 {
+    color: #fff8e9;
+    text-align: center;
+    text-shadow: 2px 2px 5px #17251b;
+	letter-spacing: 2px;
+}
+
+.academic-banner p {
+    color: #ffffff;
+    font-style: italic;
+    text-shadow: 1px 1px 4px #17251b;
+	letter-spacing: 2px;
+}
+
+/* Academic content panels */
+.academic-card {
+    background: linear-gradient(145deg, #304436, #26382d);
+    border: 1px solid #71866f;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin: 30px auto;
+    max-width: 850px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.32);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.academic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.academic-card h2 {
+    color: #e0d5ad;
+    border-bottom: 2px solid #8b9873;
+    padding-bottom: 12px;
+    letter-spacing: 1px;
+}
+.academic-card p {
+    line-height: 1.8;
+    color: #eeeade;
+}
+.academic-card ul {
+    padding-left: 25px;
+}
+
+.academic-card li {
+    padding: 4px 0;
+    color: #e8e8dc;
+}
+
+.academic-card h3,
+.academic-card h4 {
+    color: #b8c9a5;
+}
+
+/* Academic page background */
+.academic-page {
+    background: linear-gradient(135deg, #17251d, #24372b, #17251d);
+    color: #eeeade;
+}
+
+.soil-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #8b9873;
+    margin: 25px auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Hobbies page banner */
+.hobbies-banner {
+    background-image:
+        linear-gradient(rgba(36, 32, 36, 0.45), rgba(36, 32, 36, 0.45)),
+        url("images/hobbies-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #c49a72;
+    border-radius: 14px;
+    padding: 65px 35px;
+    margin: 40px auto 55px;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.hobbies-banner h1 {
+    color: #f0e5d6;
+    text-shadow: 2px 2px 5px #242024;
+}
+
+.hobbies-banner p {
+    color: #f0e5d6;
+    text-shadow: 1px 1px 4px #242024;
+}
+
+.hobbies-banner .banner-label {
+    color: #f0c3d3;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hobbies-banner .banner-subtitle {
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Hobbies content panels */
+.hobby-section {
+    background: linear-gradient(145deg, #30272d, #252125);
+    border: 1px solid #a77b82;
+    border-radius: 14px;
+    padding: 25px 30px;
+    margin: 35px auto;
+    max-width: 850px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+}
+
+/* Spotify playlist */
+.spotify-player {
+    max-width: 100%;
+    margin: 25px auto;
+    border: 1px solid #a77b82;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+}
+
+.spotify-player iframe {
+    display: block;
+    width: 100%;
+    height: 352px;
+    border: none;
+}
+
+.hobby-section h3 {
+    color: #e6a6bd;
+    border-bottom: 1px solid #a77b82;
+    padding-bottom: 8px;
+    margin-top: 25px;
+}
+
+/* Image lightbox */
+.image-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.image-lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border: 2px solid #c49a72;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    color: #f0e5d6;
+    font-size: 40px;
+    cursor: pointer;
+}
+/* Hobbies section headings */
+.hobby-section h2 {
+    color: #f0e5d6;
+}
+
+.hobby-section h3 {
+    color: #e6a6bd;
+    border-bottom: 1px solid #a77b82;
+    padding-bottom: 8px;
+    margin-top: 25px;
+}
+
+.hobby-section h4 {
+    color: #c49a72;
+}
+
+/* Hobbies paragraph text */
+.hobby-section p {
+    color: #d6c9c4;
+}
+.hobbies-banner .banner-decoration {
+    color: #c49a72;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px #242024;
+}
+/* Movies page banner */
+.movies-banner {
+    background-image:
+    linear-gradient(rgba(20, 0, 8, 0.55), rgba(20, 0, 8, 0.55)),
+    url("images/movies-banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #c49a72;
+    border-radius: 14px;
+    padding: 65px 35px;
+    margin: 40px auto 55px;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Movies banner typography */
+.movies-banner h1 {
+    color: #f0dfc2;
+    text-shadow: 2px 2px 6px #140008;
+    letter-spacing: 2px;
+}
+
+.movies-banner p {
+    color: #f5e9dc;
+    text-shadow: 1px 1px 4px #140008;
+}
+
+.movies-banner .banner-label {
+    color: #d9b878;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.movies-banner .banner-subtitle {
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.movies-banner .banner-decoration {
+    color: #d9b878;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+
+.movie-card h2 {
+    color: #d9b878;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+	font-size: 22px;
+}
+.movie-card p {
+    color: #f0e5d6;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 0;
+}
+
+.movie-card {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    border-color: #e0bd83;
+    box-shadow: 0 8px 25px rgba(196, 154, 114, 0.2);
+}
+
+body.movies-page {
+    background: linear-gradient(135deg, #170b10, #2b111c, #170b10);
+}
+
+body.contact-page {
+    background: linear-gradient(135deg, #201a20, #30252b, #201a20);
+}
+
+/* Contact page banner */
+.contact-banner {
+    background: linear-gradient(135deg, #49313d, #30252b, #49313d);
+    border: 1px solid #c49a72;
+    border-radius: 14px;
+    padding: 65px 40px;
+    margin: 40px auto 55px;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contact-banner h1 {
+    color: #f0e5d6;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #201a20;
+}
+
+.contact-banner p {
+    color: #f0e5d6;
+    text-shadow: 1px 1px 4px #201a20;
+}
+
+.contact-banner .banner-label {
+    color: #f0c3d3;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.contact-banner .banner-subtitle {
+    color: #d9b878;
+    font-style: italic;
+}
+
+.contact-banner .banner-decoration {
+    color: #d9b878;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+
+/* Contact information panels */
+.contact-card {
+    background: linear-gradient(145deg, #30272d, #252125);
+    border: 1px solid #c49a72;
+    border-radius: 14px;
+    padding: 25px 30px;
+    margin: 30px auto;
+    max-width: 750px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card h2 {
+    color: #d9b878;
+    border-bottom: 1px solid #a77b82;
+    padding-bottom: 10px;
+}
+
+.contact-card p {
+    color: #f0e5d6;
+}
+
+/* Contact form styling */
+.contact-card label {
+    display: block;
+    color: #e6a6bd;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: #211b21;
+    color: #f0e5d6;
+    border: 1px solid #8f5c72;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contact-card textarea {
+    resize: vertical;
+}
+
+.contact-card button {
+    background: linear-gradient(135deg, #d9b878, #c49a72);
+    color: #211b21;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-card button:hover {
+    background: #f0d5a3;
+    box-shadow: 0 5px 15px rgba(196, 154, 114, 0.3);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+
